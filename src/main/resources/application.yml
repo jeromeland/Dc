@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: DroitCitoyen
+
+  datasource:
+    url: ${DROIT_CITOYEN_DB_URL:jdbc:mysql://localhost:3306/droitcitoyen}
+
+    username: ${DROIT_CITOYEN_DB_LOGIN:root}
+#    password: ${DROIT_CITOYEN_DB_PWD:1234}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  profiles:
+    active: ${PROFILE_MACHINE:prod}
+#    active: prod
+

@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    password:
+
+    url: jdbc:mysql://localhost:3306/droitcitoyen_dev
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+isep:
+  droitcitoyen:
+    utilisateur:
+      admin:
+        prenom: jerome
+        nom: diadhiou
+        email: jerome@exemple.com
+
+      test:
+        nombre: 15
